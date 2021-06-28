@@ -1,4 +1,4 @@
-package com.exam;
+package com.examserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,6 +8,7 @@ public class ExamserverApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ExamserverApplication.class, args);
+		System.out.println("Hello-World!!");
 	}
 
 }
