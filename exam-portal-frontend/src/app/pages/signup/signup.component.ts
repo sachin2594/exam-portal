@@ -12,4 +12,20 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public user = {
+    userName: "",
+    password: "",
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: ""
+  }
+
+  formSubmit(){
+    alert('submit')
+  }
+
+
+
+
 }

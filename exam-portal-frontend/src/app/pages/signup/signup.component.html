@@ -7,41 +7,41 @@
                 </div>
                 <h1 class="text-center" style="margin-top: 20px;">Register Here</h1>
                 <form action="#">
-                    
+                    {{user | json }}
                     <!-- Username -->
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>User Name</mat-label>
-                        <input matInput placeholder="Username">
+                        <input matInput placeholder="Username" name="userName" [(ngModel)] = "user.userName">
                     </mat-form-field>
 
                       <!-- Password -->
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>Password</mat-label>
-                        <input type="password" matInput placeholder="Password">
+                        <input type="password" matInput placeholder="Password" name="password" [(ngModel)] = "user.password">
                     </mat-form-field>
 
                       <!-- Firstname -->
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>First Name</mat-label>
-                        <input matInput placeholder="Firstname">
+                        <input matInput placeholder="Firstname" name="firstName" [(ngModel)] = "user.firstName">
                     </mat-form-field>
 
                       <!-- Lastname -->
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>Last Name</mat-label>
-                        <input matInput placeholder="Lastname">
+                        <input matInput placeholder="Lastname" name="lastName" [(ngModel)] = "user.lastName">
                     </mat-form-field>
 
                       <!-- Email -->
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>Email</mat-label>
-                        <input type="email" matInput placeholder="Email">
+                        <input type="email" matInput placeholder="Email" name="email" [(ngModel)] = "user.email">
                     </mat-form-field>
 
                       <!-- Phonenumber -->
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>Phonenumber</mat-label>
-                        <input type="number" matInput placeholder="Phonenumber">
+                        <input type="number" matInput placeholder="phone" name="phone" [(ngModel)] = "user.phone">
                     </mat-form-field>
 
                     <div class="container">
