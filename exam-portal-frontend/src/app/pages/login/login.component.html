@@ -1,1 +1,32 @@
-<p>login works!</p>
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="container">
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <h1>Login Here !!...</h1>
+                <form action="#">
+
+                    <!-- Username -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>User Name</mat-label>
+                        <input matInput placeholder="Username" name="userName" required>
+                        <!-- <mat-hint>username must be unique!!</mat-hint> -->
+                    </mat-form-field>
+
+                      <!-- Password -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input type="password" matInput placeholder="Password" name="password" required>
+                    </mat-form-field>
+
+                    <div class="container">
+                        <button mat-raised-button color = "primary" type="submit">Login</button>
+                        <button mat-raised-button color = "accent" class="ml20" type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
