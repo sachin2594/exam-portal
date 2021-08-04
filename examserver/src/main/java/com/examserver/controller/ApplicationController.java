@@ -17,6 +17,7 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/user")
+@CrossOrigin("*")
 public class ApplicationController {
 
     @Autowired
@@ -29,6 +30,7 @@ public class ApplicationController {
        if (user1!= null){
            throw new Exception("User already exists!!");
        }else {
+           user.setProfile("default.png");
            user.setRole("NORMAL");
        }
         return userRepository.save(user);

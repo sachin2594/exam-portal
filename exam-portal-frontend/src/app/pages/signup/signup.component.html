@@ -6,12 +6,13 @@
                     <!-- <img src="" alt=""> -->
                 </div>
                 <h1 class="text-center" style="margin-top: 20px;">Register Here</h1>
-                <form action="#">
-                    {{user | json }}
+                <form (ngSubmit)="formSubmit()">
+
                     <!-- Username -->
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>User Name</mat-label>
                         <input matInput placeholder="Username" name="userName" [(ngModel)] = "user.userName">
+                        <mat-hint>username must be unique!!</mat-hint>
                     </mat-form-field>
 
                       <!-- Password -->
@@ -45,8 +46,8 @@
                     </mat-form-field>
 
                     <div class="container">
-                        <button mat-raised-button color="primary">Register</button>
-                        <button style="margin-left: 20px;" mat-raised-button color="accent">Clear</button>
+                        <button type="submit" mat-raised-button color="primary">Register</button>
+                        <button type="reset" style="margin-left: 20px;" mat-raised-button color="accent">Clear</button>
                     </div>
 
                 </form> 
